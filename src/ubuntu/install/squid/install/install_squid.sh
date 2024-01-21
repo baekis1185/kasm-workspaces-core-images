@@ -104,7 +104,7 @@ fi
 # Create an empty cert9.db. This will be used by applications like Chrome
 mkdir -p $HOME/.pki/nssdb/
 certutil -N -d sql:$HOME/.pki/nssdb/ --empty-password
-chown 1000:1000 $HOME/.pki/nssdb/
+chown 1032:65536 $HOME/.pki/nssdb/
 
 
 cat >/usr/bin/filter_ready <<EOL
